@@ -18,10 +18,12 @@ Overview of our proposed framework. For acronym POS, there are k expansions in t
 
 ### Environment
 Packages required:
-> torch >= 1.6
-> numpy
-> sklearn
-> transformers
+```
+torch >= 1.6
+numpy
+sklearn
+transformers
+```
 
 ### Dataset
 
@@ -29,15 +31,21 @@ Please refer to the https://github.com/amirveyseh/AAAI-22-SDU-shared-task-2-AD t
 
 Just put the fold "/data" in your project.
 
+Also, you can use your own data and rewrite the code.
+
 ### Run the code
 
 Just use the bash (set your own parameters in bash file first)
-> bash bash/start.sh
+```
+bash bash/start.sh
+```
 
 The result would be saved in $output_folder
 
 Then get the score using the following command:
-> python scorer.py -g path/to/gold.json -p path/to/predictions.json
+```
+python scorer.py -g path/to/gold.json -p path/to/predictions.json
+```
 
 The --gap and --mu control the $\lambda$ and $\mu$ in Eq 3 .
 
