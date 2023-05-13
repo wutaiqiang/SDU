@@ -1,7 +1,7 @@
 # Prompt-based Model for Acronym Disambiguation via Negative Sampling
 
 This repo contains the code for our AAAI 2022 SDU Workshop paper:
-<a href="" target="_blank"> Prompt-based Model for Acronym Disambiguation via Negative Sampling </a> by <a href="https://wutaiqiang.github.io" target="_blank">Taiqiang Wu</a>, Xingyu Bai, Yujiu Yang.
+<a href="https://ix.cs.uoregon.edu/~apouranb/sdu22/SDUAAAI22_paper_11.pdf" target="_blank"> Prompt-based Model for Acronym Disambiguation via Negative Sampling </a> by <a href="https://wutaiqiang.github.io" target="_blank">Taiqiang Wu</a>, Xingyu Bai, Yujiu Yang.
 
 ## Overview
 In this paper, we proposed a prompt-based acronym disambiguation framework with a specially designed negative sampling strategy. Firstly, we design a prompt template and use the template to concatenate the acronym context and candidate expansions. Secondly, we utilize a pre-trained language model such as BERT to encode the combined context separately, followed by a linear layer to map the context vectors into logits. Since the size of candidate expansions for each acronym varies, we try to sample negative samples, thus padding the candidate expansions randomly. Finally, we consider the original negative expansions as hard negative samples and the added ones as easy negative samples, which can calculate an extra loss to build a more robust system. 
